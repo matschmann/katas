@@ -17,8 +17,10 @@ public class HappyNumbersApp {
         int sum = sumWithPower(digits);
 
         if (sum == 1) {
+            listOfSums.clear();
             return true;
         } else if (listOfSums.contains(sum)) {
+            listOfSums.clear();
             return false; 
         } else {
             listOfSums.add(sum);
