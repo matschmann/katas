@@ -8,9 +8,8 @@ import java.util.Arrays;
 import java.util.LinkedList;
 
 public class HappyNumbersAppTest {
-
-
-    LinkedList<Integer> happyNumbers = new LinkedList<>(Arrays.asList(
+    
+    private LinkedList<Integer> happyNumbers = new LinkedList<>(Arrays.asList(
             1, 7, 10, 13, 19, 23, 28, 31, 32, 44, 
             49, 68, 70, 79, 82, 86, 91, 94, 97, 
             100, 103, 109, 129, 130, 133, 139, 
@@ -25,10 +24,8 @@ public class HappyNumbersAppTest {
             boolean isHappy = happyNumbersApp.isNumberHappy(i);
 
             if (isHappy) {
-                System.out.println(i + " is happy");
                 assertThat(happyNumbers).contains(i);
             } else {
-                System.out.println(i + " is not happy");
                 assertThat(happyNumbers).doesNotContain(i);
             }
         }
