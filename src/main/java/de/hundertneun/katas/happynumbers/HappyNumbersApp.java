@@ -31,9 +31,7 @@ public class HappyNumbersApp {
      * @return true if number is happy
      */
     public boolean isNumberHappy(int number) {
-        int[] digits = getDigits(number);
-        
-        int sum = sumWithPower(digits);
+        int sum = digitsSumSquare(number);
 
         if (sum == 1) {
             listOfSums.clear();
@@ -47,7 +45,12 @@ public class HappyNumbersApp {
         }
     }
 
-    private int sumWithPower(int[] digits) {
+    private int digitsSumSquare(int number) {
+        int[] digits = getDigits(number);
+        return digitsSumSquare(digits);
+    }
+
+    private int digitsSumSquare(int[] digits) {
         int sum = 0;
         for (int digit : digits) {
             sum += square(digit);
