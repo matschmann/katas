@@ -36,7 +36,7 @@ public class HappyNumbersApp {
         if (sum == 1) {
             listOfSums.clear();
             return true;
-        } else if (listOfSums.contains(sum)) {
+        } else if (listOfSums.contains(sum)) { //exit condition: if the current sum was already calculated
             listOfSums.clear();
             return false; 
         } else {
