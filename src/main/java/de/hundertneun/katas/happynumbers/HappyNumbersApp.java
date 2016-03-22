@@ -6,4 +6,9 @@ public class HappyNumbersApp {
         System.out.println("fröhliche zahlen");
     }
 
+    public boolean isNumberHappy(int number) {
+        
+        return false; 
+    }
+
 }
