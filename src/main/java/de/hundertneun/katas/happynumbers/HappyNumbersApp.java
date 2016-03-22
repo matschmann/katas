@@ -43,7 +43,7 @@ public class HappyNumbersApp {
 
         int[] digits = new int[numberAsString.length()];
         for (int i = 0; i<numberAsString.length();i++) {
-            digits[i] = numberAsString.charAt(i);
+            digits[i] = Integer.parseInt("" + numberAsString.charAt(i));
         }
         
         return digits; 
