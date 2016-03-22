@@ -6,11 +6,7 @@ import java.util.List;
 public class HappyNumbersApp {
 
     private List<Integer> listOfSums;
-
-    public static void main(String... args) {
-        System.out.println("fröhliche zahlen");
-    }
-
+    
     public HappyNumbersApp() {
         listOfSums = new ArrayList<>();
     }
