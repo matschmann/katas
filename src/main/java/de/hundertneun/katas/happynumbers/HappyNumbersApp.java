@@ -8,10 +8,19 @@ public class HappyNumbersApp {
 
     public boolean isNumberHappy(int number) {
         int[] digits = getDigits(number);
+
         
-        
+        int sum = sumWithPower(digits);
 
         return false; 
+    }
+
+    private int sumWithPower(int[] digits) {
+        int sum = 0;
+        for (int digit : digits) {
+            sum += Math.pow(digit, 2);
+        }
+        return sum; 
     }
 
     private int[] getDigits(int number) {
